@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<h1 align="center">PROXY LIST SCRAPER</h1>
+<table style="width: 100%">
+    <thead>
+    <tr>
+        <th>IP Address</th>
+        <th>Port</th>
+        <th>Country</th>
+        <th>Anonymity</th>
+        <th>Google</th>
+        <th>Google</th>
+        <th>Https</th>
+        <th>Last Checked</th>
+
+    </tr>
+    </thead>
+    <tbody>
+    {% for row in proxies %}
+        <tr>
+            <td>{{row[0]}}</td>
+            <td>{{row[1]}}</td>
+            <td>{{row[2]}}</td>
+            <td>{{row[3]}}</td>
+            <td>{{row[4]}}</td>
+            <td>{{row[5]}}</td>
+            <td>{{row[6]}}</td>
+            <td>{{row[7]}}</td>
+            <td>{{row[8]}}</td>
+        </tr>
+    {% endfor %}
+
+    </tbody>
+</table>
+</body>
+</html>
